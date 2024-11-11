@@ -1,0 +1,22 @@
+function setup() {
+  createCanvas(600, 500);
+  background(225,0,22);
+  
+  // Mengatur jarak
+  let spacing = 50;
+  
+  // perulangan for ganda untuk membuat pola lingkaran
+    for (let x = spacing; x < width; x += spacing) {
+    for (let y = spacing; y < height; y += spacing) {
+      
+      // memberi warna
+      let r = random(255); 
+      let g = random(255); 
+      let b = random(255);
+      fill(r, g, b);
+      
+      //membuat lingakaran
+      ellipse(x, y, 30, 30);
+    }
+  }
+}
